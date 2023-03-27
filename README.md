@@ -1,6 +1,6 @@
-# SOLIDER on Person Re-identification
+# SOLIDER on [Person Re-identification]
 
-This repo provides details about how to use [SOLIDER](https://github.com/tinyvision/SOLIDER) pretrained representation on **person re-identification task**.
+This repo provides details about how to use [SOLIDER](https://github.com/tinyvision/SOLIDER) pretrained representation on person re-identification task.
 We modify the code from [TransReID](https://github.com/damo-cv/TransReID), and you can refer to the original repo for more details.
 
 ## Installation and Datasets
