@@ -189,7 +189,8 @@ class build_transformer(nn.Module):
 
         convert_weights = True if pretrain_choice == 'imagenet' else False
         self.base = factory[cfg.MODEL.TRANSFORMER_TYPE](img_size=cfg.INPUT.SIZE_TRAIN, drop_path_rate=cfg.MODEL.DROP_PATH, drop_rate= cfg.MODEL.DROP_OUT,attn_drop_rate=cfg.MODEL.ATT_DROP_RATE, pretrained=model_path, convert_weights=convert_weights, semantic_weight=semantic_weight)
-        self.base.init_weights(model_path)
+        if model_path != '':
+            self.base.init_weights(model_path)
         self.in_planes = self.base.num_features[-1]
 
         self.num_classes = num_classes

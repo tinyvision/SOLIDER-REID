@@ -1,5 +1,8 @@
 # SOLIDER on [Person Re-identification]
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/beyond-appearance-a-semantic-controllable/person-re-identification-on-msmt17)](https://paperswithcode.com/sota/person-re-identification-on-msmt17?p=beyond-appearance-a-semantic-controllable)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/beyond-appearance-a-semantic-controllable/person-re-identification-on-market-1501)](https://paperswithcode.com/sota/person-re-identification-on-market-1501?p=beyond-appearance-a-semantic-controllable)
+
 This repo provides details about how to use [SOLIDER](https://github.com/tinyvision/SOLIDER) pretrained representation on person re-identification task.
 We modify the code from [TransReID](https://github.com/damo-cv/TransReID), and you can refer to the original repo for more details.
 
@@ -23,14 +26,21 @@ We utilize 1 GPU for training. Please modify the `MODEL.PRETRAIN_PATH`, `DATASET
 sh run.sh
 ```
 
+## Test
+
+```bash
+sh runtest.sh
+```
+
 ## Performance
 
-| Method | Model | MSMT17<br>(mAP/R1) | Market1501<br>(mAP/R1) |
+| Method | Model | MSMT17<br>(w/o RK) | Market1501<br>(w/o RK) | MSMT17<br>(with RK) | Market1501<br>(with RK) |
 | ------ | :---: | :---: | :---: |
-| SOLIDER | Swin Tiny | 67.4/85.9 | 91.6/96.1 |
-| SOLIDER | Swin Small | 76.9/90.8 | 93.3/96.6 |
-| SOLIDER | Swin Base | 77.1/90.7 | 93.9/96.9 |
+| SOLIDER | Swin Tiny | 67.4/85.9 | 91.6/96.1 | 81.5/89.2 | 95.3/96.6 |
+| SOLIDER | Swin Small | 76.9/90.8 | 93.3/96.6 | 86.5/91.7 | 95.4/96.4 |
+| SOLIDER | Swin Base | 77.1/90.7 | 93.9/96.9 | 86.5/91.7 | 95.6/96.7 |
 
+- mAP/Rank1 are used as evaluation metric, RK indicates whether re-ranking is involved.
 - We use the pretrained models from [SOLIDER](https://github.com/tinyvision/SOLIDER).
 - The semantic weight is set to 0.2 in these experiments.
 
