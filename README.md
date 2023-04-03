@@ -35,7 +35,7 @@ sh runtest.sh
 ## Performance
 
 | Method | Model | MSMT17<br>(w/o RK) | Market1501<br>(w/o RK) | MSMT17<br>(with RK) | Market1501<br>(with RK) |
-| ------ | :---: | :---: | :---: |
+| ------ | :---: | :---: | :---: | :---: | :---: |
 | SOLIDER | Swin Tiny | 67.4/85.9 | 91.6/96.1 | 81.5/89.2 | 95.3/96.6 |
 | SOLIDER | Swin Small | 76.9/90.8 | 93.3/96.6 | 86.5/91.7 | 95.4/96.4 |
 | SOLIDER | Swin Base | 77.1/90.7 | 93.9/96.9 | 86.5/91.7 | 95.6/96.7 |
