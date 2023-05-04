@@ -36,9 +36,9 @@ sh runtest.sh
 
 | Method | Model | MSMT17<br>(w/o RK) | Market1501<br>(w/o RK) | MSMT17<br>(with RK) | Market1501<br>(with RK) |
 | ------ | :---: | :---: | :---: | :---: | :---: |
-| SOLIDER | Swin Tiny | 67.4/85.9<br>([Link](https://drive.google.com/file/d/10YLhMbwvmxZl3gTVo2BN_828SKZHdCjr/view?usp=share_link)) | 91.6/96.1<br>([Link](https://drive.google.com/file/d/1YrE_r9Fk5uR0uFFQboBv203vxlOpFXU8/view?usp=share_link)) | 81.5/89.2 | 95.3/96.6 |
-| SOLIDER | Swin Small | 76.9/90.8<br>([Link](https://drive.google.com/file/d/1C-aIZdFyjFsZX4W4feG-Ex39RU2Qvu3b/view?usp=share_link)) | 93.3/96.6<br>([Link](https://drive.google.com/file/d/14uOCf5yZq0Rt5rRSJI9I7_d5kt2EOyHO/view?usp=share_link)) | 86.5/91.7 | 95.4/96.4 |
-| SOLIDER | Swin Base | 77.1/90.7<br>([Link](https://drive.google.com/file/d/1Y-RFAYdT56vnMjwxH1Ym3DVhZzZuMQZs/view?usp=share_link)) | 93.9/96.9<br>([Link](https://drive.google.com/file/d/1pZ1unW2IwSsqSN2KYHcgBhgjQztQW_fe/view?usp=share_link)) | 86.5/91.7 | 95.6/96.7 |
+| SOLIDER | Swin Tiny | 67.4/85.9<br>([Link](https://drive.google.com/file/d/10YLhMbwvmxZl3gTVo2BN_828SKZHdCjr/view?usp=share_link),[Log](https://drive.google.com/file/d/1qpc7kbPn9JpV6qu2HO1-WrL75gGLtz6_/view?usp=share_link)) | 91.6/96.1<br>([Link](https://drive.google.com/file/d/1YrE_r9Fk5uR0uFFQboBv203vxlOpFXU8/view?usp=share_link),[Log](https://drive.google.com/file/d/1EGdR1_tj0b8UG1FEmGbcBqhw-wXKTdg0/view?usp=share_link)) | 81.5/89.2 | 95.3/96.6 |
+| SOLIDER | Swin Small | 76.9/90.8<br>([Link](https://drive.google.com/file/d/1C-aIZdFyjFsZX4W4feG-Ex39RU2Qvu3b/view?usp=share_link),[Log](https://drive.google.com/file/d/1Oqzk3iZQOXTyPLJgGlnqDan1buLRx-bH/view?usp=share_link)) | 93.3/96.6<br>([Link](https://drive.google.com/file/d/14uOCf5yZq0Rt5rRSJI9I7_d5kt2EOyHO/view?usp=share_link),[Log](https://drive.google.com/file/d/1lH2-ozb5ju9TTeXIyDqeEW4U450zbgrc/view?usp=share_link)) | 86.5/91.7 | 95.4/96.4 |
+| SOLIDER | Swin Base | 77.1/90.7<br>([Link](https://drive.google.com/file/d/1Y-RFAYdT56vnMjwxH1Ym3DVhZzZuMQZs/view?usp=share_link),[Log](https://drive.google.com/file/d/1DIxAeDJqFrZ4dIEe4VQrhCJNaS3NAk3O/view?usp=share_link)) | 93.9/96.9<br>([Link](https://drive.google.com/file/d/1pZ1unW2IwSsqSN2KYHcgBhgjQztQW_fe/view?usp=share_link),[Log](https://drive.google.com/file/d/1DH0K4Ks9LXJEFVcm5PfIUUZ3A3vpFfLZ/view?usp=share_link)) | 86.5/91.7 | 95.6/96.7 |
 
 - `mAP/Rank1` are used as evaluation metric, `RK` indicates whether re-ranking is involved.
 - `RK` shares the same models with `w/o RK`.
